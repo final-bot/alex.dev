@@ -1,5 +1,4 @@
 import styled, { css, keyframes } from "styled-components";
-import CustomButton from '../customButton/CustomButton.component';
 import { device } from "../../common/breakpoints";
 
 const lightModeColorStyles = css`

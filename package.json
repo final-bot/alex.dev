@@ -1,8 +1,8 @@
 {
-  "name": "personal-website",
+  "name": "alex-dev-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://borosati85.github.io/personal-website/",
+  "homepage": "",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.0",

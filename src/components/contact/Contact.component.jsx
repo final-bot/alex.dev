@@ -171,7 +171,7 @@ const Contact = () => {
         <ContactDescription>
           <ContactTitle>CONTACT</ContactTitle>
           <ContactSubTitle>
-          Got a question or proposal, or just want to say hello? Send me a message.
+          Got a question or would like to work together? Send me a message.
           </ContactSubTitle>
         </ContactDescription>
         <ContactForm ref={formRef} onSubmit={handleSubmit}>

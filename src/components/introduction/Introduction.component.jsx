@@ -11,7 +11,7 @@ import {
 import CustomButton from "../customButton/CustomButton.component";
 import AnimatedWrapper from "../animated/AnimatedWrapper";
 import { ThemeContext } from "../../context";
-import backgroundVideo from '../../video/bg-vid.mp4'
+import backgroundVideo from '../../video/blue-portfolio-bg.mp4'
 
 const Introduction = () => {
   const theme = useContext(ThemeContext);
@@ -24,21 +24,18 @@ const Introduction = () => {
       </VideoContainer>
       <IntroWrapper>
         <IntroSubHeading>
-          <AnimatedWrapper splitWord={true}>Hi,</AnimatedWrapper>
-        </IntroSubHeading>
-        <IntroSubHeading>
-          <AnimatedWrapper splitWord={true}>I'm</AnimatedWrapper>
+          <AnimatedWrapper splitWord={true}>Alex</AnimatedWrapper>
         </IntroSubHeading>
         <IntroMainHeading>
-          <AnimatedWrapper splitWord={true}>Attila</AnimatedWrapper>
+          <AnimatedWrapper splitWord={true}>Thain</AnimatedWrapper>
         </IntroMainHeading>
         <IntroSubHeading>
-          <AnimatedWrapper splitWord={true}>Web Developer</AnimatedWrapper>
+          <AnimatedWrapper splitWord={true}>Front End Developer</AnimatedWrapper>
         </IntroSubHeading>
         <IntroDescription>
           <AnimatedWrapper>
-            I'm a self taught web developer, who found passion in coding and
-            building things for the web.
+            I'm a full stack developer with over 7 years experience working for major global companies. I have a passion for
+            building responsive web applications & AWS cloud infrastructure.
           </AnimatedWrapper>
         </IntroDescription>
         <ButtonContainer>

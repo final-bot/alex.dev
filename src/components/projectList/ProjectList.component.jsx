@@ -47,7 +47,7 @@ const ProjectList = () => {
         <ProjectListTextContainer>
           <ProjectListTitle>WORK</ProjectListTitle>
           <ProjectListSubTitle>
-            A selection of stuff that I've built
+            A selection of projects that I've built
           </ProjectListSubTitle>
         </ProjectListTextContainer>
         <ListContainer>

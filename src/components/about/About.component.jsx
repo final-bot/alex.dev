@@ -70,10 +70,8 @@ const About = () => {
             A little bit about myself, if you'd like to get to know me
           </AboutSubTitle>
           <AboutText visibility={aboutVisibility}>
-            Self taught web developer, life long learner, with growth mindset and positive thinking. 
-            Eager to contribute to team success through hard work, attention to detail and excellent technical and problem solving skills.
-            Likes challanges and solving complex problems by breaking them down to smaller parts and finding the best solutions.
-            Motivated to learn, grow and excel in IT.             
+            Experienced software engineer with over 7 years experience across full stack web development with specialisms in Front End development using React and AWS cloud infrastructure utilising Infrastructure as Code.
+                         
           </AboutText>
           <CustomButton visibility={aboutVisibility} target='_blank' href={CV} darkMode={darkMode}>Download CV</CustomButton>
         </AboutTextContainer>
