@@ -8,10 +8,10 @@ const lightModeColorStyles = css`
 `;
 
 const darkModeColorStyles = css`
-    background-color: #7f5af0;
+    background-color: #3527f8ff;
 
     &:hover {
-        background-color: #7753d4;
+        background-color: #281dc4ff;
     }
 `;
 

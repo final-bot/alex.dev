@@ -1,4 +1,3 @@
-import React from "react";
 import { CustomButtonContainer, CustomButtonContainerLink } from './customButton.styles';
 
 const CustomButton = ({ children, href, darkMode, target }) => {

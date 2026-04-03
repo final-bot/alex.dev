@@ -4,7 +4,6 @@ import {
   IntroWrapper,
   IntroSubHeading,
   IntroMainHeading,
-  IntroDescription,
   ButtonContainer,
   VideoContainer
 } from "./intro.styles";
@@ -23,24 +22,15 @@ const Introduction = () => {
         <source src={backgroundVideo} type="video/mp4"/>
       </VideoContainer>
       <IntroWrapper>
-        <IntroSubHeading>
-          <AnimatedWrapper splitWord={true}>Alex</AnimatedWrapper>
-        </IntroSubHeading>
         <IntroMainHeading>
-          <AnimatedWrapper splitWord={true}>Thain</AnimatedWrapper>
+          <AnimatedWrapper splitWord={true}>Alex Thain</AnimatedWrapper>
         </IntroMainHeading>
         <IntroSubHeading>
-          <AnimatedWrapper splitWord={true}>Front End Developer</AnimatedWrapper>
+          <AnimatedWrapper splitWord={true}>Full Stack Developer</AnimatedWrapper>
         </IntroSubHeading>
-        <IntroDescription>
-          <AnimatedWrapper>
-            I'm a full stack developer with over 7 years experience working for major global companies. I have a passion for
-            building responsive web applications & AWS cloud infrastructure.
-          </AnimatedWrapper>
-        </IntroDescription>
         <ButtonContainer>
           <AnimatedWrapper>
-            <CustomButton darkMode={darkMode} href="#projects">View my Work</CustomButton>
+            <CustomButton darkMode={darkMode} href="#projects">View my work</CustomButton>
           </AnimatedWrapper>
           <AnimatedWrapper>
             <CustomButton darkMode={darkMode} href="#contact">Contact me</CustomButton>

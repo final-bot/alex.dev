@@ -32,7 +32,7 @@ const darkModeColorStyles = css`
   background-color: #16161a;
 
   h2 {
-    color: #7f5af0;
+    color: #3527f8ff;
   }
 
   h3 {
@@ -44,9 +44,9 @@ const darkModeColorStyles = css`
   }
 
   button {
-    --primary: #7f5af0;
-    --primary-dark: #47328a;
-    --primary-darkest: #322361;
+    --primary: #3527f8ff;
+    --primary-dark: #1509bdff;
+    --primary-darkest: #090459ff;
   }
 
   input,

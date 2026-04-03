@@ -32,7 +32,7 @@ const darkModeColorStyles = css`
   }
 
   code {
-    background-color: #7f5af0;
+    background-color: #3527f8ff;
     color: #fffffe;
   }
 `;
@@ -118,7 +118,7 @@ export const Background = styled.div`
   &:nth-of-type(1) {
     top: -360px;
     right: -390px;
-    background: linear-gradient(to top, #3da9fc, #7f5af0);
+    background: linear-gradient(to top, #3da9fc, #3527f8ff);
 
     ${ProjectCardContainer}:hover & {
       top: 200px;
@@ -129,7 +129,7 @@ export const Background = styled.div`
   &:nth-of-type(2) {
     top: 200px;
     right: 230px;
-    background: linear-gradient(to bottom, #3da9fc, #7f5af0);
+    background: linear-gradient(to bottom, #3da9fc, #3527f8ff);
 
     ${ProjectCardContainer}:hover & {
       top: -360px;

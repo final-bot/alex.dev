@@ -8,4 +8,4 @@ In this application there is the following technologies:
 - GSAP
 
 ## Installation
-You can simply clone this repository, and run "npm install" to install dependencies, then use "npm start" to start the application.
+You can simply run "npm install" to install dependencies, then use "npm start" to start the application.

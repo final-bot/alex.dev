@@ -7,11 +7,12 @@ const Sidebar = () => {
 
     const [emailVisibility, setEmailVisibility] = useState(0);
     const [phoneVisibility, setPhoneVisibility] = useState(0);
-    const emailRef = useRef();
-    const phoneRef = useRef();
+    const emailRef = useRef<HTMLLIElement>(null);
+    const phoneRef = useRef<HTMLLIElement>(null);
 
-    const handleMouseEnter = event => {
-        const id = event.target.id;        
+    const handleMouseEnter = (event: MouseEvent) => {
+        const target = event.currentTarget as HTMLLIElement;
+        const id = target.id;
         if (id === 'email') {
             setEmailVisibility(1);            
         } else {
@@ -19,8 +20,9 @@ const Sidebar = () => {
         }
     }
 
-    const handleMouseLeave = event => {
-        const id = event.target.id;
+    const handleMouseLeave = (event: MouseEvent) => {
+        const target = event.currentTarget as HTMLLIElement;
+        const id = target.id;
         if (id === 'email') {
             setEmailVisibility(0);
         } else {
@@ -31,35 +33,35 @@ const Sidebar = () => {
     useEffect(()=> {
         const emailElement = emailRef.current;
         const phoneElement = phoneRef.current;
-        emailElement.addEventListener('mouseenter', handleMouseEnter);
-        phoneElement.addEventListener('mouseenter', handleMouseEnter);
-        emailElement.addEventListener('mouseleave', handleMouseLeave);
-        phoneElement.addEventListener('mouseleave', handleMouseLeave);
+        if (emailElement && phoneElement) {
+            emailElement.addEventListener('mouseenter', handleMouseEnter);
+            phoneElement.addEventListener('mouseenter', handleMouseEnter);
+            emailElement.addEventListener('mouseleave', handleMouseLeave);
+            phoneElement.addEventListener('mouseleave', handleMouseLeave);
 
-        return(
-            () => {
+            return () => {
                 emailElement.removeEventListener('mouseenter', handleMouseEnter);
                 phoneElement.removeEventListener('mouseenter', handleMouseEnter);
                 emailElement.removeEventListener('mouseleave', handleMouseLeave);
                 phoneElement.removeEventListener('mouseleave', handleMouseLeave);
-            }
-        )
-    })
+            };
+        }
+    }, []);
 
     return (
         <SidebarContainer name='div'>
             <SidebarList name='ul'>
                 <SidebarListItem>
-                    <SidebarLink href={`https://www.linkedin.com/in/${process.env.LINKEDIN_USER}`} target='blank'><Icon icon={ faLinkedin }/></SidebarLink>
+                    <SidebarLink href={`https://www.linkedin.com/in/${process.env.REACT_APP_LINKEDIN_USER}`} target='blank'><Icon icon={ faLinkedin }/></SidebarLink>
                 </SidebarListItem>
                 <SidebarListItem>
-                    <SidebarLink href={`https://github.com/${process.env.GITHUB_USER}`} target='blank'><Icon icon={ faGithub }/></SidebarLink>
+                    <SidebarLink href={`https://github.com/${process.env.REACT_APP_GITHUB_USER}`} target='blank'><Icon icon={ faGithub }/></SidebarLink>
                 </SidebarListItem>
                 <SidebarListItem ref={emailRef} id='email'>
-                    <Icon icon={ faEnvelope }/><Contact visibility={emailVisibility}>{process.env.EMAIL_ADDRESS}</Contact>
+                    <Icon icon={ faEnvelope }/><Contact visibility={emailVisibility}>{process.env.REACT_APP_EMAIL_ADDRESS}</Contact>
                 </SidebarListItem>
                 <SidebarListItem ref={phoneRef} id='phone'>
-                    <Icon icon={ faPhone }/><Contact visibility={phoneVisibility}>{process.env.TELEPHONE_NUMBER}</Contact>
+                    <Icon icon={ faPhone }/><Contact visibility={phoneVisibility}>{process.env.REACT_APP_TELEPHONE_NUMBER}</Contact>
                 </SidebarListItem>
             </SidebarList>
         </SidebarContainer>

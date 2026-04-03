@@ -16,7 +16,7 @@ import {
   AboutSubTitle,
   AboutText
 } from "./about.styles";
-import CV from '../../assets/CV.pdf';
+import CV from '../../assets/Alex Thain CV.pdf';
 import { ThemeContext } from "../../context";
 
 const About = () => {
@@ -67,18 +67,18 @@ const About = () => {
         <AboutTextContainer visibility={aboutVisibility} ref={aboutRef}>
           <AboutTitle visibility={aboutVisibility}>ABOUT</AboutTitle>
           <AboutSubTitle visibility={aboutVisibility}>
-            A little bit about myself, if you'd like to get to know me
+            A little bit about myself
           </AboutSubTitle>
           <AboutText visibility={aboutVisibility}>
-            Experienced software engineer with over 7 years experience across full stack web development with specialisms in Front End development using React and AWS cloud infrastructure utilising Infrastructure as Code.
-                         
+            Experienced software engineer with 7+ years experience across full stack web development for major global companies, namely IBM & BAE Systems. 
+            I have specialisms in Front End development building responsive, performant web applications using React & Next.js and AWS cloud infrastructure solutions and implementations utilising Infrastructure as Code.
           </AboutText>
-          <CustomButton visibility={aboutVisibility} target='_blank' href={CV} darkMode={darkMode}>Download CV</CustomButton>
         </AboutTextContainer>
+        <CustomButton visibility={aboutVisibility} target='_blank' href={CV} darkMode={darkMode}>Download CV</CustomButton>
         <SkillsContainer ref={skillsRef}>
           <AboutTitle visibility={skillsVisibility}>SKILLS</AboutTitle>
           <AboutSubTitle visibility={skillsVisibility}>
-            The tools and technologies I use to bring ideas to life
+            The tools and technologies I'm proficient in
           </AboutSubTitle>
           <SkillIconList visibility={skillsVisibility} />
         </SkillsContainer>

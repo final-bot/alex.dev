@@ -24,7 +24,7 @@ const darkModeColorStyles = css`
   background-color: rgba(0, 0, 0, 0.7);
 
   h2 {
-    color: #7f5af0;
+    color: #3527f8ff;
   }
 
   h3 {

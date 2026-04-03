@@ -1,41 +1,42 @@
-import eCommercePic from "../img/projects_honey.jpg";
-import faceRecPic from "../img/projects_face.png";
-import html from '../img/html.png';
+import healthClinicPic from "../img/project_healthClinicSystem.png";
+import squadTrackrApp from "../img/squadTrackrApp.png";
+import java from '../img/java.png';
 import css from '../img/css.png';
 import js from '../img/js.png';
 import react from '../img/react.png';
 import redux from '../img/redux.png';
 import typescript from '../img/typescript.png';
 import node from '../img/node.png';
-import firebase from '../img/firebase.png';
+import nextjs from '../img/next-js.png';
 import responsive from '../img/responsive.png';
 import github from '../img/github.png';
+import agile from '../img/agile.png';
 
 const projects = [
   {
     id: 1,
-    title: "Sport Teams App",
+    title: "Health Clinic App",
     description:
-      "A full-stack sports squad availability & match stat tracking application built with React, Next.js and Supabase.",
-    pic: eCommercePic,
-    githubUrl: "https://github.com/final-bot/SquadTrackr",
-    technologies: ["react", "next-js", "supabase"]
+      "A full-stack health clinic management application built with React, Next.js and SQLite via Prisma allowing the viewing, creating and deleting of appointments.",
+    pic: healthClinicPic,
+    githubUrl: "https://github.com/final-bot/HealthClinicApi",
+    technologies: ["react", "next-js", "sqlite", "prisma"]
   },
   {
     id: 2,
-    title: "Football Match Tracking App",
+    title: "Sports Team App",
     description:
-      "A football match tracking application built with React and Next.js. It allows users to track matchs they've attended across the world.",
-    pic: faceRecPic,
-    githubUrl: "https://github.com/final-bot/AwayDays",
-    technologies: ["react", "next-js"]
+      "An sports team application built with React and Next.js. It allows captains, users, players etc to track matchs they're attending or played in. Tracks availability for upcoming matches and stats for previous matches.",
+    pic: squadTrackrApp,
+    githubUrl: "https://github.com/final-bot/SquadTrackr",
+    technologies: ["react", "next-js", "supabase"]
   },
 ];
 
 const skills = [
   {
-    name: 'HTML5',
-    pic: html,
+    name: 'Java',
+    pic: java,
     animation: 'jello'
   },
   {
@@ -69,8 +70,8 @@ const skills = [
     animation: 'jello'
   },
   {
-    name: 'Firebase',
-    pic: firebase,
+    name: 'Next.js',
+    pic: nextjs,
     animation: 'jello'
   },
   {
@@ -81,6 +82,11 @@ const skills = [
   {
     name: 'Github',
     pic: github,
+    animation: 'jello'
+  },
+  {
+    name: 'Agile',
+    pic: agile,
     animation: 'jello'
   }
 ]

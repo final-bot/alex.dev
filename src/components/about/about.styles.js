@@ -21,7 +21,7 @@ const darkModeColorStyles = css`
   background-color: #16161a;
 
   h2 {
-    color: #7f5af0;
+    color: #3527f8ff;
   }
 
   h3 {
@@ -104,6 +104,7 @@ export const AboutSubTitle = styled.h3`
 `;
 export const AboutText = styled.p`
   display: none;
+  padding-bottom: 20px;
   text-align: justify;
   line-height: 30px;
   ${setVisibility};
@@ -122,5 +123,3 @@ export const AboutTextContainer = styled.div`
   }
 
 `;
-
-

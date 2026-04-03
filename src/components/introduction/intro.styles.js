@@ -53,6 +53,12 @@ export const VideoContainer = styled.video`
 export const IntroWrapper = styled.div`
   position: absolute;
   top: 50%;
+  left: 10%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   transform: translateY(-50%);
   padding: 0 35px;
 
@@ -97,8 +103,8 @@ export const IntroMainHeading = styled.h1`
 
 export const IntroDescription = styled.p`
   max-width: 100%;
-  font-size: 15px;
-  max-width: 450px;
+  font-size: 20px;
+  max-width: 100%;
   text-align: justify;
 
   @media only screen and ${device.xs} {
@@ -117,9 +123,10 @@ export const ButtonContainer = styled.div`
   gap: 10px;
 
   @media only screen and ${device.sm} {
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
+    margin-top: 40px;
   }
 
   button {

@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { device } from '../../common/breakpoints';
 
-
 export const SidebarContainer = styled.div`
     position: fixed;
     top: 30%;
@@ -25,14 +24,14 @@ export const SidebarList = styled.ul`
 export const SidebarListItem = styled.li`
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 12px 0;
     transition: all 1s;
     position: relative;
 `;
 
 export const SidebarLink = styled.a`
     text-decoration: none;    
-`
+`;
 
 export const Icon = styled(FontAwesomeIcon)`
     width: 20px;
@@ -48,7 +47,7 @@ export const Icon = styled(FontAwesomeIcon)`
     &:hover {
         transform: scale(1.3);
     }
-`
+`;
 
 const visible = css`
     opacity: 100%;    
@@ -72,14 +71,13 @@ const setVisibility = ({ visibility }) => {
 
 export const Contact = styled.p`
     position: absolute;
-    width: 220px;
-    top: 50%
+    width: 400px;
+    top: 70%
     right: 0;
     padding: 2px 10px;
+    font-size: 14px;
     color: white;    
     border-radius: 20px 0px 0px 20px;
     transition: all 1s;
-    ${setVisibility};
-    
-`
-
+    ${setVisibility}; 
+`;
