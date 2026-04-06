@@ -134,7 +134,7 @@ export const ContactForm = styled.form`
   margin-top: 100px;
 
   button {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 `;
 

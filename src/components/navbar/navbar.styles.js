@@ -79,7 +79,7 @@ export const NavigationList = styled.ul`
     align-items: center;
     justify-content: center;
     padding: 0;
-    gap: 30px;
+    gap: 60px;
     list-style: none;
     ${setMenuVisibility};
 

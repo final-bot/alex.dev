@@ -53,7 +53,7 @@ export const VideoContainer = styled.video`
 export const IntroWrapper = styled.div`
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 13%;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ export const IntroWrapper = styled.div`
 
 export const IntroSubHeading = styled.h2`
   max-width: 100%;
-  font-size: 23px;
+  font-size: 28px;
   font-weight: 400;
   margin: 0;
 

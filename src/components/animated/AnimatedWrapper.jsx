@@ -8,7 +8,7 @@ const AnimatedWrapper = ({ children, splitWord }) => {
     const darkMode = theme.state.darkMode;
 
     if (splitWord) {
-        const reactArray = children.split('').map((letter, index) => <AnimatedSpan darkMode={darkMode} splitWord={true} key={index}>{letter}</AnimatedSpan>)
+        const reactArray = children.split('').map((letter, index) => <AnimatedSpan darkMode={darkMode} splitWord={true} key={index}>{letter + " "}</AnimatedSpan>)
         return <span>{reactArray}</span>
     } else {
         return <AnimatedSpan>{children}</AnimatedSpan>

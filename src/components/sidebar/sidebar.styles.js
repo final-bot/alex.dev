@@ -4,7 +4,7 @@ import { device } from '../../common/breakpoints';
 
 export const SidebarContainer = styled.div`
     position: fixed;
-    top: 30%;
+    top: 35%;
     right: 0px;    
     padding: 5px 5px 5px 5px;
     border-radius: 20px 0px 0px 20px;

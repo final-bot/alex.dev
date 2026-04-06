@@ -108,4 +108,5 @@ export const ListContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+  padding-top: 50px;
 `;
